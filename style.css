@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: #F58E05;
+    background-color: #ffffff;
     padding-top: 95px;
 }
 
@@ -74,7 +74,7 @@ a {
     justify-content: center;
     align-items: center; 
     gap: 20px;
-    margin-top: 5px;
+    margin-top: 1px;
     padding: 0%;
     margin-bottom: 1px;
 }
@@ -85,9 +85,20 @@ a {
     }
 
 .texto-container h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 230, 0);
+    font-family: 'Steelfish', sans-serif; 
+    font-weight: bolder; 
+    font-size: 90px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.texto-container p {
+    color: rgb(255, 230, 0);
+    font-family: 'Steelfish', sans-serif; 
+    font-weight: normal; 
+    font-size: 40px;
+    text-align: right;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .foto-container {
@@ -98,10 +109,51 @@ a {
     border-radius: 50%;
 }
 
-
-
 .btn-warning {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: rgb(0, 11, 163);
 }
+
+.video-background-container {
+    position: relative; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.overlay-content {
+   position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    z-index: 999;
+    color: white; 
+}
+
+@font-face {
+    font-family: 'Steelfish'; 
+    src: url('fontes/Steelfish\ Rg.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Steelfish'; 
+    src: url('fontes/Steelfish\ Bd.otf') format('opentype'); 
+    font-weight: bold; 
+    font-style: normal;
+}
+
