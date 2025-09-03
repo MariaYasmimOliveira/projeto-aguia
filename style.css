@@ -207,6 +207,7 @@ html, body {
     font-style: normal;
 }
 
+<<<<<<< HEAD
 .chamada-container {
     padding: 2% 2%;
 }
@@ -241,3 +242,43 @@ html, body {
 .btn-group {
     width: 70%;
 }
+=======
+#carousel-historia {
+  width: 80%; 
+  margin: 5px auto; 
+}
+
+#carousel-historia .carousel-item img {
+  margin-top: 0%;
+  object-fit: cover; 
+}
+
+.carousel-indicators {
+    bottom: 5px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  bottom: 15px;
+  top: auto; 
+}
+
+.carousel-indicators [data-bs-target],
+.carousel-indicators .active {
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+h1 {
+  background-color: #FFDE59;
+  color: black;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+>>>>>>> 5ed654e94e0f07aa0918aeb7a72bd416efdf3ffd
