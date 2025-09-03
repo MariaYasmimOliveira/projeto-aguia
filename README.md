@@ -31,8 +31,7 @@ Transformar vidas através da música, ensinando não apenas teoria e prática m
 
 1. Clone este repositório:  
    ```bash
-   git clone https://github.com/seu-usuario/projeto-aguia.git
-
+   https://github.com/MariaYasmimOliveira/projeto-aguia.git
 2. Entre na pasta do projeto:
 
     cd projeto-aguia
