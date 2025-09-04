@@ -1,73 +1,192 @@
 @charset "UTF-8";
 
-
+/* ===== ESTILOS GERAIS ===== */
 body {
+    overflow-x: hidden;
+}
+
+a {
+    font-weight: bold;
+}
+
+h1 {
+    background-color: #FFDE59;
+    color: black;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* ===== FONTES PERSONALIZADAS ===== */
+@font-face {
+    font-family: 'GravitasOne'; 
+    src: url('fontes/GravitasOne-Regular.ttf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'GravitasOne'; 
+    src: url('fontes/GravitasOne-Regular.ttf') format('opentype'); 
+    font-weight: bold; 
+    font-style: normal;
+}
+
+/* ===== AJUSTES DE PADDING PARA CADA PÁGINA ===== */
+.pagina-inicial {
     padding-top: 131px;
 }
 
 @media (min-width: 992px) {
-    body {
+    .pagina-inicial {
         padding-top: 95px;
     }
 }
 
-a {
-    color: rgb(11, 0, 138);
-    font-weight: bold;
+.nossa-historia {
+    padding-top: 0;
 }
 
-html, body {
-    overflow-x: hidden;
+/* ===== ESTILOS DA NAVBAR - PÁGINA INICIAL ===== */
+.pagina-inicial #barra-principal-inicial .nav-link,
+.pagina-inicial #barra-principal-inicial .navbar-brand {
+    color: rgb(11, 0, 163) !important;
+    font-size: 20px;
 }
 
-/* ===== NAVBAR ===== */
-#barra-principal .nav-link {
-    margin: 5px;
-}
-
-#barra-principal {
-    z-index: 1050;
-}
-
-.logobarra{
+.pagina-inicial .logobarra {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin: 15px;
 }
 
+.pagina-inicial .btn-light {
+    border: 1px solid rgb(11, 0, 163);
+    color: rgb(11, 0, 163);
+}
 
-.navbar-brand {
+.pagina-inicial .form-control {
+    border: 1px solid rgb(11, 0, 163);
+}
+
+/* ===== ESTILOS DA NAVBAR - PÁGINA NOSSA HISTORIA ===== */
+.nossa-historia .header-container {
+    background-image: url('image/turma_violino23.jpeg');
+    background-size: cover;
+    background-position: center 70%;
+}
+
+.nossa-historia .header-projeto {
+    background-color: rgba(0,0,0,0.5);
+    height: 350px;
+    position: relative;
+    color: white;
+}
+
+.nossa-historia .header-projeto .overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px; 
+}
+
+.nossa-historia .header-projeto h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fcfafa;
+}
+
+.nossa-historia .header-projeto p {
+    font-size: 1.2rem;
+    color:#faf9f9;
+}
+
+.nossa-historia .header-projeto h1 {
+    background-color: transparent; 
+}
+
+.nossa-historia #barra-principal {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+}
+
+.nossa-historia #barra-principal .nav-link,
+.nossa-historia #barra-principal .navbar-brand {
+    color: #ffde59 !important; 
+    font-size: 20px;
+}
+
+.nossa-historia .logobarra{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.nossa-historia .navbar-brand {
     margin: 5px;
 }
 
-/* ===== CARROSSEL ===== */
-
-.header-principal {
-    display: flex;
-    justify-content: center;
-    background-color: whitesmoke;
+.nossa-historia .form-control {
+    border: 3px solid #ffde59;
 }
 
-.container-botao-conheca {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+.nossa-historia .btn-light {
+    background-color: #ffde59;
+    color: black; 
+    border: 1px solid #ffbe59; 
 }
 
-.carousel-inner img {
+/* ===== SEÇÃO VÍDEO E SOBREPOSIÇÃO - PÁGINA INICIAL ===== */
+.pagina-inicial .video-background-container {
+    position: relative;
+    height: 87vh;
+    overflow: hidden;
+}
+
+.pagina-inicial .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.pagina-inicial .overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* ===== ESTILOS CARROSSEL - PÁGINA INICIAL ===== */
+.pagina-inicial #carouselExampleCaptions {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+}
+
+.pagina-inicial .carousel-inner img {
     max-height: 80vh;
     object-fit: cover;
-     max-width: 100%;
+    max-width: 100%;
 }
 
-#carouselExampleCaptions {
-  position: relative;
-  z-index: 2;
-  margin-top: 50px;
-}
-
-.corTextoSlide h5 {
+.pagina-inicial .corTextoSlide h5 {
     font-weight: bolder;
     font-size: clamp(24px, 5vw, 50px);
     font-family: 'Times New Roman', Times, serif;
@@ -75,7 +194,7 @@ html, body {
     text-shadow: 2px 2px 4px #000;
 }
 
-.corTextoSlide p {
+.pagina-inicial .corTextoSlide p {
     font-weight: bolder;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -83,7 +202,39 @@ html, body {
     text-shadow: 2px 2px 4px #000;
 }
 
-/* ===== sobre ===== */
+/* ===== ESTILOS CARROSSEL - PÁGINA NOSSA HISTORIA ===== */
+.nossa-historia #carousel-historia {
+    width: 95%; 
+    margin: 5px auto; 
+}
+
+.nossa-historia #carousel-historia .carousel-item img {
+    height: 750px;
+    object-fit: cover; 
+}
+
+.nossa-historia .carousel-indicators {
+    bottom: 5px;
+}
+
+.nossa-historia .carousel-control-prev, 
+.nossa-historia .carousel-control-next {
+    bottom: 15px;
+    top: auto; 
+}
+
+.nossa-historia .carousel-indicators [data-bs-target],
+.nossa-historia .carousel-indicators .active {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.nossa-historia .carousel-control-prev-icon, 
+.nossa-historia .carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* ===== SEÇÕES DA PÁGINA SOBRE/NOSSA HISTÓRIA ===== */
 .sobre-container {
     display: flex;
     justify-content: center;
@@ -97,8 +248,7 @@ html, body {
 .texto-container {
     flex: 1;
     max-width: 600px;
-    }
-
+}
 
 .texto-container p {
     color: rgb(3, 0, 171);
@@ -121,11 +271,10 @@ html, body {
     }
 }
 
-/* Para telas PEQUENAS (celulares) */
 @media (max-width: 991px) {
     .texto-container h1 {
         padding-top: 10px; 
-         color: rgb(3, 0, 171);
+        color: rgb(3, 0, 171);
         font-family: 'GravitasOne', sans-serif; 
         font-weight: bolder; 
         font-size: 40px;
@@ -138,7 +287,6 @@ html, body {
     max-width: 600px;
 }
 
-
 @media (min-width: 992px) {
     .foto-container img {
         border-radius: 50%;
@@ -148,7 +296,6 @@ html, body {
     }
 }
 
-/* Este padding é para telas PEQUENAS (celulares) */
 @media (max-width: 991px) {
     .foto-container img {
         border-radius: 50%;
@@ -158,56 +305,7 @@ html, body {
     }
 }
 
-
-.btn-warning {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: rgb(0, 11, 163);
-}
-
-.video-background-container {
-    position: relative; 
-    height: 87vh;
-    overflow: hidden;
-}
-
-.video-background {
-    position: absolute; 
-    left: 0;
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-    z-index: -1; 
-}
-
-.overlay-content {
-   position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    z-index: 999;
-    color: white; 
-}
-
-@font-face {
-    font-family: 'GravitasOne'; 
-    src: url('fontes/GravitasOne-Regular.ttf') format('opentype'); 
-    font-weight: normal; 
-    font-style: normal; 
-}
-
-@font-face {
-    font-family: 'GravitasOne'; 
-    src: url('fontes/GravitasOne-Regular.ttf') format('opentype'); 
-    font-weight: bold; 
-    font-style: normal;
-}
-
-<<<<<<< HEAD
+/* ===== SEÇÕES DO VÍDEO DO YOUTUBE ===== */
 .chamada-container {
     padding: 2% 2%;
 }
@@ -242,43 +340,43 @@ html, body {
 .btn-group {
     width: 70%;
 }
-=======
-#carousel-historia {
-  width: 80%; 
-  margin: 5px auto; 
+
+/* ===== OUTROS ESTILOS GERAIS ===== */
+.header-principal {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.container-botao-conheca {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
-#carousel-historia .carousel-item img {
-  margin-top: 0%;
-  object-fit: cover; 
+/* ===== SEÇÃO MISSÃO, VISÃO E VALORES ===== */
+.mvv-section {
+    padding: 15px 0;
+    background-color: transparent;
 }
 
-.carousel-indicators {
-    bottom: 5px;
+.mvv-section h3 {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.carousel-control-prev, .carousel-control-next {
-  bottom: 15px;
-  top: auto; 
+.mvv-section p {
+    color: #555;
+    font-size: 1rem;
 }
 
-.carousel-indicators [data-bs-target],
-.carousel-indicators .active {
-  background-color: #000;
-  border: 1px solid #000;
+.mvv-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    font-size: 5rem !important;
+    color: #ffde59 !important;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  filter: invert(100%);
-}
-
-h1 {
-  background-color: #FFDE59;
-  color: black;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 45px;
-  margin-top: 10px;
-}
-
->>>>>>> 5ed654e94e0f07aa0918aeb7a72bd416efdf3ffd
