@@ -380,3 +380,16 @@ h1 {
     color: #ffde59 !important;
 }
 
+/* ===== ESTILOS ÍCONES RODAPÉ - PÁGINA NOSSA HISTÓRIA ===== */
+
+.icone-casa {
+    color: #4682B4; 
+}
+
+.icone-email {
+    color: #f9f23a;
+}
+
+.icone-telefone {
+    color: #25D366; 
+}
