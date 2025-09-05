@@ -33,6 +33,12 @@ h1 {
     font-style: normal;
 }
 
+.fonte-btn-NH {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
 /* ===== AJUSTES DE PADDING PARA CADA PÁGINA ===== */
 .pagina-inicial {
     padding-top: 131px;
@@ -40,7 +46,7 @@ h1 {
 
 @media (min-width: 992px) {
     .pagina-inicial {
-        padding-top: 95px;
+        padding-top: 0px;
     }
 }
 
@@ -49,26 +55,72 @@ h1 {
 }
 
 /* ===== ESTILOS DA NAVBAR - PÁGINA INICIAL ===== */
-.pagina-inicial #barra-principal-inicial .nav-link,
-.pagina-inicial #barra-principal-inicial .navbar-brand {
-    color: rgb(11, 0, 163) !important;
+.pagina-inicial .header-container {
+    background-image: url('image/crianças.jpg');
+    background-size: cover;
+    background-position: center 70%;
+}
+
+.pagina-inicial .header-projeto {
+    background-color: rgba(0,0,0,0.5);
+    height: 350px;
+    position: relative;
+    color: white;
+}
+
+.pagina-inicial .header-projeto .overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px; 
+}
+
+.pagina-inicial .header-projeto h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fcfafa;
+    background-color: transparent; 
+}
+
+.pagina-inicial .header-projeto p {
+    font-size: 1.2rem;
+    color:#faf9f9;
+}
+
+.pagina-inicial #barra-principal {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+}
+
+.pagina-inicial #barra-principal .nav-link,
+.pagina-inicial #barra-principal .navbar-brand {
+    color: #ffde59 !important; 
     font-size: 20px;
 }
 
-.pagina-inicial .logobarra {
-    width: 50px;
-    height: 50px;
+.pagina-inicial .logobarra{
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     margin: 15px;
 }
 
-.pagina-inicial .btn-light {
-    border: 1px solid rgb(11, 0, 163);
-    color: rgb(11, 0, 163);
+.pagina-inicial .navbar-brand {
+    margin: 5px;
 }
 
 .pagina-inicial .form-control {
-    border: 1px solid rgb(11, 0, 163);
+    border: 3px solid #ffde59;
+}
+
+.pagina-inicial .btn-light {
+    background-color: #ffde59;
+    color: black; 
+    border: 1px solid #ffbe59; 
 }
 
 /* ===== ESTILOS DA NAVBAR - PÁGINA NOSSA HISTORIA ===== */
@@ -144,63 +196,7 @@ h1 {
 }
 
 /* ===== SEÇÃO VÍDEO E SOBREPOSIÇÃO - PÁGINA INICIAL ===== */
-.pagina-inicial .video-background-container {
-    position: relative;
-    height: 87vh;
-    overflow: hidden;
-}
 
-.pagina-inicial .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.pagina-inicial .overlay-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-/* ===== ESTILOS CARROSSEL - PÁGINA INICIAL ===== */
-.pagina-inicial #carouselExampleCaptions {
-    position: relative;
-    z-index: 2;
-    margin-top: 50px;
-}
-
-.pagina-inicial .carousel-inner img {
-    max-height: 80vh;
-    object-fit: cover;
-    max-width: 100%;
-}
-
-.pagina-inicial .corTextoSlide h5 {
-    font-weight: bolder;
-    font-size: clamp(24px, 5vw, 50px);
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(250, 246, 17);
-    text-shadow: 2px 2px 4px #000;
-}
-
-.pagina-inicial .corTextoSlide p {
-    font-weight: bolder;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    text-shadow: 2px 2px 4px #000;
-}
 
 /* ===== ESTILOS CARROSSEL - PÁGINA NOSSA HISTORIA ===== */
 .nossa-historia #carousel-historia {
