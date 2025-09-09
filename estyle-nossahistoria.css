@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+
+
+/* ===== ESTILOS DA NAVBAR - PÁGINA INICIAL ===== */
+.nossa-historia .header-container {
+    background-image: url('image/turma_violino23.jpeg');
+    background-size: cover;
+    background-position: center 70%;
+}
+
+.nossa-historia .header-projeto {
+    background-color: rgba(0,0,0,0.5);
+    height: 350px;
+    position: relative;
+    color: white;
+}
+
+.nossa-historia .header-projeto .overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px; 
+}
+
+.nossa-historia .header-projeto h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fcfafa;
+    background-color: transparent; 
+}
+
+.nossa-historia .header-projeto p {
+    font-size: 1.2rem;
+    color:#faf9f9;
+}
+
+.nossa-historia #barra-principal {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+}
+
+.nossa-historia #barra-principal .nav-link,
+.nossa-historia #barra-principal .navbar-brand {
+    color: #ffde59 !important; 
+    font-size: 20px;
+}
+
+.nossa-historia .logobarra{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.nossa-historia .navbar-brand {
+    margin: 5px;
+}
+
+.nossa-historia .form-control {
+    border: 3px solid #ffde59;
+}
+
+.nossa-historia .btn-light {
+    background-color: #ffde59;
+    color: black; 
+    border: 1px solid #ffbe59; 
+}
+
+
+/* ===== ESTILOS GERAIS ===== */
+body {
+    overflow-x: hidden;
+}
+
+a {
+    font-weight: bold;
+}
+
+h1 {
+    background-color: #FFDE59;
+    color: black;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* ===== FONTES PERSONALIZADAS ===== */
+
+.fonte-btn-NH {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+/* ===== ESTILOS CARROSSEL  ===== */
+.nossa-historia #carousel-historia {
+    width: 95%; 
+    margin: 5px auto; 
+}
+
+.nossa-historia #carousel-historia .carousel-item img {
+    height: 750px;
+    object-fit: cover; 
+}
+
+.nossa-historia .carousel-indicators {
+    bottom: 5px;
+}
+
+.nossa-historia .carousel-control-prev, 
+.nossa-historia .carousel-control-next {
+    bottom: 15px;
+    top: auto; 
+}
+
+.nossa-historia .carousel-indicators [data-bs-target],
+.nossa-historia .carousel-indicators .active {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.nossa-historia .carousel-control-prev-icon, 
+.nossa-historia .carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* ===== SEÇÃO MISSÃO, VISÃO E VALORES ===== */
+.mvv-section {
+    padding: 15px 0;
+    background-color: transparent;
+}
+
+.mvv-section h3 {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.mvv-section p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.mvv-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    font-size: 5rem !important;
+    color: #ffde59 !important;
+}
+
+/* ===== ESTILOS ÍCONES RODAPÉ ===== */
+
+.icone-casa {
+    color: #4682B4; 
+}
+
+.icone-email {
+    color: #f9f23a;
+}
+
+.icone-telefone {
+    color: #25D366; 
+}

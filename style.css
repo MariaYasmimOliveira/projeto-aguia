@@ -9,14 +9,6 @@ a {
     font-weight: bold;
 }
 
-h1 {
-    background-color: #FFDE59;
-    color: black;
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 40px;
-    margin-top: 10px;
-}
 
 /* ===== FONTES PERSONALIZADAS ===== */
 @font-face {
@@ -27,7 +19,7 @@ h1 {
 }
 
 @font-face {
-    font-family: 'GravitasOne'; 
+    font-family: 'GravitasOne2'; 
     src: url('fontes/GravitasOne-Regular.ttf') format('opentype'); 
     font-weight: bold; 
     font-style: normal;
@@ -39,20 +31,6 @@ h1 {
     font-style: bold;
 }
 
-/* ===== AJUSTES DE PADDING PARA CADA PÁGINA ===== */
-.pagina-inicial {
-    padding-top: 131px;
-}
-
-@media (min-width: 992px) {
-    .pagina-inicial {
-        padding-top: 0px;
-    }
-}
-
-.nossa-historia {
-    padding-top: 0;
-}
 
 /* ===== ESTILOS DA NAVBAR - PÁGINA INICIAL ===== */
 .pagina-inicial .header-container {
@@ -123,183 +101,6 @@ h1 {
     border: 1px solid #ffbe59; 
 }
 
-/* ===== ESTILOS DA NAVBAR - PÁGINA NOSSA HISTORIA ===== */
-.nossa-historia .header-container {
-    background-image: url('image/turma_violino23.jpeg');
-    background-size: cover;
-    background-position: center 70%;
-}
-
-.nossa-historia .header-projeto {
-    background-color: rgba(0,0,0,0.5);
-    height: 350px;
-    position: relative;
-    color: white;
-}
-
-.nossa-historia .header-projeto .overlay {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 140px; 
-}
-
-.nossa-historia .header-projeto h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #fcfafa;
-}
-
-.nossa-historia .header-projeto p {
-    font-size: 1.2rem;
-    color:#faf9f9;
-}
-
-.nossa-historia .header-projeto h1 {
-    background-color: transparent; 
-}
-
-.nossa-historia #barra-principal {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; 
-    padding-left: 50px; 
-    padding-right: 50px; 
-}
-
-.nossa-historia #barra-principal .nav-link,
-.nossa-historia #barra-principal .navbar-brand {
-    color: #ffde59 !important; 
-    font-size: 20px;
-}
-
-.nossa-historia .logobarra{
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    margin: 15px;
-}
-
-.nossa-historia .navbar-brand {
-    margin: 5px;
-}
-
-.nossa-historia .form-control {
-    border: 3px solid #ffde59;
-}
-
-.nossa-historia .btn-light {
-    background-color: #ffde59;
-    color: black; 
-    border: 1px solid #ffbe59; 
-}
-
-/* ===== SEÇÃO VÍDEO E SOBREPOSIÇÃO - PÁGINA INICIAL ===== */
-
-
-/* ===== ESTILOS CARROSSEL - PÁGINA NOSSA HISTORIA ===== */
-.nossa-historia #carousel-historia {
-    width: 95%; 
-    margin: 5px auto; 
-}
-
-.nossa-historia #carousel-historia .carousel-item img {
-    height: 750px;
-    object-fit: cover; 
-}
-
-.nossa-historia .carousel-indicators {
-    bottom: 5px;
-}
-
-.nossa-historia .carousel-control-prev, 
-.nossa-historia .carousel-control-next {
-    bottom: 15px;
-    top: auto; 
-}
-
-.nossa-historia .carousel-indicators [data-bs-target],
-.nossa-historia .carousel-indicators .active {
-    background-color: #000;
-    border: 1px solid #000;
-}
-
-.nossa-historia .carousel-control-prev-icon, 
-.nossa-historia .carousel-control-next-icon {
-    filter: invert(100%);
-}
-
-/* ===== SEÇÕES DA PÁGINA SOBRE/NOSSA HISTÓRIA ===== */
-.sobre-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 20px;
-    margin-top: 1px;
-    padding: 0%;
-    margin-bottom: 1px;
-}
-
-.texto-container {
-    flex: 1;
-    max-width: 600px;
-}
-
-.texto-container p {
-    color: rgb(3, 0, 171);
-    font-family: 'Steelfish', sans-serif; 
-    font-weight: bold; 
-    font-size: 30px;
-    text-align: left;
-    text-shadow: 2px 2px 4px #ffffff;
-}
-
-@media (min-width: 992px) {
-    .texto-container h1 {
-        padding-top: 40px;
-        color: rgb(3, 0, 171);
-        font-family: 'GravitasOne', sans-serif; 
-        font-weight: bolder; 
-        font-size: 60px;
-        font-style: oblique;
-        text-shadow: 2px 2px 4px #ffffff;
-    }
-}
-
-@media (max-width: 991px) {
-    .texto-container h1 {
-        padding-top: 10px; 
-        color: rgb(3, 0, 171);
-        font-family: 'GravitasOne', sans-serif; 
-        font-weight: bolder; 
-        font-size: 40px;
-        font-style: oblique;
-        text-shadow: 2px 2px 4px #ffffff;
-    }
-}
-
-.foto-container {
-    max-width: 600px;
-}
-
-@media (min-width: 992px) {
-    .foto-container img {
-        border-radius: 50%;
-        padding-block-end: 5%;
-        height: 600px;
-        width: 600px;
-    }
-}
-
-@media (max-width: 991px) {
-    .foto-container img {
-        border-radius: 50%;
-        padding-block-end: 5%;
-        height: 200px;
-        width: 200px;
-    }
-}
 
 /* ===== SEÇÕES DO VÍDEO DO YOUTUBE ===== */
 .chamada-container {
@@ -337,44 +138,6 @@ h1 {
     width: 70%;
 }
 
-/* ===== OUTROS ESTILOS GERAIS ===== */
-.header-principal {
-    display: flex;
-    justify-content: center;
-    background-color: whitesmoke;
-}
-.container-botao-conheca {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-/* ===== SEÇÃO MISSÃO, VISÃO E VALORES ===== */
-.mvv-section {
-    padding: 15px 0;
-    background-color: transparent;
-}
-
-.mvv-section h3 {
-    color: #000;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.mvv-section p {
-    color: #555;
-    font-size: 1rem;
-}
-
-.mvv-icon {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    font-size: 5rem !important;
-    color: #ffde59 !important;
-}
 
 /* ===== ESTILOS ÍCONES RODAPÉ - PÁGINA NOSSA HISTÓRIA ===== */
 
