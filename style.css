@@ -103,39 +103,38 @@ a {
 
 
 /* ===== SEÇÕES DO VÍDEO DO YOUTUBE ===== */
-.chamada-container {
-    padding: 2% 2%;
+ .btn-custom-1 {
+    background-color: #f2b705;
+    color: #1a1a1a;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
 }
 
-.video-chamada {
-    display: flex;
-    align-items: center;
-    gap: 10%;
+.btn-custom-1:hover {
+    background-color: #d8a504;
+    transform: translateY(-2px);
+    color: #1a1a1a;
 }
 
-.video-titulo h2 {
-    width: 70%;
+.btn-custom-2 {
+    background-color: #333333;
+    color: #f5f5f5;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
 }
 
-.chamada-container h1 {
-    text-align: center;
-    margin: 2%;
-    font-family: 'GravitaOne';
-    font-weight: bolder;
-    font-style: oblique;
+.btn-custom-2:hover {
+    background-color: #222222;
+    transform: translateY(-2px);
+    color: #f5f5f5;
 }
 
-.chamada-container iframe {
-    border-radius: 5%;
-    margin: 1%;
-}
-
-.btn {
-    margin: 5%;
-}
-
-.btn-group {
-    width: 70%;
+.secao-video {
+    background-color: rgb(254, 254, 254);
 }
 
 
