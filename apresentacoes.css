@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* --- Estilos completos para a página de Apresentações --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilos Cabeçalho e NAV BAR --- */
+
+.pagina-apresentacoes .header-container {
+    background-image: url('image/apresentacao_disney24.jpg');
+    background-size: cover;
+    background-position: center 100%;
+}
+
+.pagina-apresentacoes .apresentacoes-header {
+    background-color: rgba(0,0,0,0.5);
+    height: 350px;
+    position: relative;
+    color: white;
+}
+
+.pagina-apresentacoes .apresentacoes-header .overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px; 
+}
+
+.pagina-apresentacoes .apresentacoes-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fcfafa;
+    background-color: transparent; 
+}
+
+.pagina-apresentacoes .apresentacoes-header p {
+    font-size: 1.2rem;
+    color:#faf9f9;
+}
+
+
+.pagina-apresentacoes #barra-principal {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+}
+
+.pagina-apresentacoes #barra-principal .nav-link,
+.pagina-apresentacoes #barra-principal .navbar-brand {
+    color: #ffde59 !important; 
+    font-size: 20px;
+}
+
+.pagina-apresentacoes .logobarra{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.pagina-apresentacoes .navbar-brand {
+    margin: 5px;
+}
+
+.pagina-apresentacoes .form-control {
+    border: 3px solid #ffde59;
+}
+
+.pagina-apresentacoes .btn-light {
+    background-color: #ffde59;
+    color: black; 
+    border: 1px solid #ffbe59; 
+}
+
+
+/* Estilo para a seção de conteúdo abaixo do cabeçalho */
+.secao-conteudo {
+    padding: 60px;
+    background-color: #f8f9fa; 
+}
+
+.apresentacoes-header h1 {
+    padding-top: 50px;
+
+}
+
+/* Estilo para a seção de apresentações passadas e futuras */
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    width: 100%; /* Agora ele ocupa 100% da sua coluna (col-md-4) */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 20px; /* Adiciona um espaço entre os cards em diferentes linhas */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.btn {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* ===== ESTILOS ÍCONES RODAPÉ ===== */
+
+.icone-casa {
+    color: #4682B4; 
+}
+
+.icone-email {
+    color: #f9f23a;
+}
+
+.icone-telefone {
+    color: #25D366; 
+}
