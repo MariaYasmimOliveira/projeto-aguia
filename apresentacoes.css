@@ -1,14 +1,6 @@
 @charset "UTF-8";
 
-/* --- Estilos completos para a página de Apresentações --- */
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* --- Estilos Cabeçalho e NAV BAR --- */
+/* Estilos únicos da página de Apresentações */
 
 .pagina-apresentacoes .header-container {
     background-image: url('image/apresentacao_disney24.jpg');
@@ -44,55 +36,13 @@ body {
     color:#faf9f9;
 }
 
-
-.pagina-apresentacoes #barra-principal {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; 
-    padding-left: 50px; 
-    padding-right: 50px; 
-}
-
-.pagina-apresentacoes #barra-principal .nav-link,
-.pagina-apresentacoes #barra-principal .navbar-brand {
-    color: #ffde59 !important; 
-    font-size: 20px;
-}
-
-.pagina-apresentacoes .logobarra{
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    margin: 15px;
-}
-
-.pagina-apresentacoes .navbar-brand {
-    margin: 5px;
-}
-
-.pagina-apresentacoes .form-control {
-    border: 3px solid #ffde59;
-}
-
-.pagina-apresentacoes .btn-light {
-    background-color: #ffde59;
-    color: black; 
-    border: 1px solid #ffbe59; 
-}
-
-
 /* Estilo para a seção de conteúdo abaixo do cabeçalho */
 .secao-conteudo {
     padding: 60px;
     background-color: #f8f9fa; 
 }
 
-.apresentacoes-header h1 {
-    padding-top: 50px;
-
-}
-
 /* Estilo para a seção de apresentações passadas e futuras */
-
 .card-img-top {
     height: 200px;
     object-fit: cover;
@@ -106,12 +56,12 @@ h1, h2 {
 }
 
 .card {
-    width: 100%; /* Agora ele ocupa 100% da sua coluna (col-md-4) */
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     overflow: hidden;
     background: #fff;
-    margin-bottom: 20px; /* Adiciona um espaço entre os cards em diferentes linhas */
+    margin-bottom: 20px;
 }
 
 .card img {
@@ -137,7 +87,7 @@ h1, h2 {
     font-size: 14px;
 }
 
-.btn {
+.btn-card {
     display: block;
     margin-top: 15px;
     padding: 10px;
@@ -148,21 +98,6 @@ h1, h2 {
     border-radius: 6px;
     font-weight: bold;
 }
-
-.btn:hover {
+.btn-card:hover {
     background: #0056b3;
-}
-
-/* ===== ESTILOS ÍCONES RODAPÉ ===== */
-
-.icone-casa {
-    color: #4682B4; 
-}
-
-.icone-email {
-    color: #f9f23a;
-}
-
-.icone-telefone {
-    color: #25D366; 
 }

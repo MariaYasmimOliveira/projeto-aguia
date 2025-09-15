@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
+@charset "UTF-8";
 
-
-/* ===== ESTILOS DA NAVBAR - PÁGINA INICIAL ===== */
+/* Estilos únicos da página "Nossa História" */
 .nossa-historia .header-container {
     background-image: url('image/turma_violino23.jpeg');
     background-size: cover;
@@ -37,38 +37,63 @@
     color:#faf9f9;
 }
 
-.nossa-historia #barra-principal {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; 
-    padding-left: 50px; 
-    padding-right: 50px; 
+/* Seção Missão, Visão, Valores */
+.mvv-section {
+    padding: 15px 0;
+    background-color: transparent;
 }
 
-.nossa-historia #barra-principal .nav-link,
-.nossa-historia #barra-principal .navbar-brand {
-    color: #ffde59 !important; 
-    font-size: 20px;
+.mvv-section h3 {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.nossa-historia .logobarra{
-    width: 65px;
-    height: 65px;
+.mvv-section p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.mvv-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
-    margin: 15px;
+    font-size: 5rem !important;
+    color: #ffde59 !important;
 }
 
-.nossa-historia .navbar-brand {
-    margin: 5px;
+/* Carrossel */
+#carousel-historia {
+    width: 95%; 
+    margin: 5px auto; 
 }
 
-.nossa-historia .form-control {
-    border: 3px solid #ffde59;
+#carousel-historia .carousel-item img {
+    height: 750px;
+    object-fit: cover; 
 }
 
-.nossa-historia .btn-light {
-    background-color: #ffde59;
-    color: black; 
-    border: 1px solid #ffbe59; 
+.carousel-indicators {
+    bottom: 5px;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    bottom: 15px;
+    top: auto; 
+}
+
+.carousel-indicators [data-bs-target],
+.carousel-indicators .active {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    filter: invert(100%);
 }
 
 
@@ -157,16 +182,3 @@ h1 {
     color: #ffde59 !important;
 }
 
-/* ===== ESTILOS ÍCONES RODAPÉ ===== */
-
-.icone-casa {
-    color: #4682B4; 
-}
-
-.icone-email {
-    color: #f9f23a;
-}
-
-.icone-telefone {
-    color: #25D366; 
-}

@@ -58,7 +58,7 @@ function criarCardEvento(evento) {
                     <p class="card-text"><strong>Data:</strong> ${dataFormatada}</p>
                     <p class="card-text"><strong>Horário:</strong> ${evento.horario}</p>
                     <p class="card-text"><strong>Local:</strong> ${evento.local}</p>
-                    <button type="button" class="btn btn-primary mt-auto" 
+                    <button type="button" class="btn btn-primary btn-card mt-auto" 
                             data-bs-toggle="modal" data-bs-target="#modalDetalhes" 
                             data-evento-id="${evento.id}">
                         Detalhes
