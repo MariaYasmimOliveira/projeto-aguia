@@ -24,6 +24,7 @@ Transformar vidas através da música, ensinando não apenas teoria e prática m
 - **HTML5**  
 - **CSS3**
 - **Bootstrap**
+- **JavaScript**
 
 ---
 
