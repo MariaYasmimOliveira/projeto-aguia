@@ -187,3 +187,16 @@ footer .row a strong {
 .secao-video {
     background-color: rgb(254, 254, 254);
 }
+
+.card-border-custom {
+            border-bottom: 4px solid #FFD700;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-border-custom:hover {
+            background-color: #fbff84;
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+
