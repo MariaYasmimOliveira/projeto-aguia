@@ -1,8 +1,8 @@
-# Pasta de Dependências (Contém Express, pg, etc.)
+# Pasta de Dependências 
 /Back-end/node_modules
 
-# Arquivo de Credenciais (Contém a senha do BD)
+# Arquivo de Credenciais
 /Back-end/db.js
 
-# IGNORAR a pasta Front-end que está na RAIZ (a INCORRETA)
+# IGNORAR a pasta Front-end que está na RAIZ (INCORRETA)
 /Front-end
