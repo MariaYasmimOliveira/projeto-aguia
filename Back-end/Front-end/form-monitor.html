@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição de Monitores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="form-aluno.css">
+</head>
+<body>
+    <div class="frosted-glass p-4 p-md-5 mx-auto" style="max-width: 500px;">
+        <header class="text-center mb-4 text-dark">
+            <h1 class="fs-2 fw-bold">Olá, Futuro Monitor!</h1>
+            <p class="lead">Obrigado por querer apoiar o Projeto Águia! Preencha o formulário para registrar sua inscrição como monitor.</p>
+        </header>
+
+        <form id="formMonitor" action="">
+            <!-- Campo de nome -->
+            <div class="mb-3">
+                <label for="nome" class="form-label text-dark">Nome Completo</label>
+                <input type="text" id="nomeCompleto" name="nome" placeholder="Seu nome completo" class="form-control" required>
+            </div>
+
+            <!-- Campo de telefone -->
+            <div class="mb-3">
+                <label for="telefone" class="form-label text-dark">Telefone para contato</label>
+                <input type="number" id="telefoneContato" name="telefone" placeholder="(67) 99999-9999" required pattern="[0-9]{10,11}" title="Apenas números, com DDD (ex: 67524978563)" class="form-control">
+            </div>
+
+            <!-- Campo de data de nascimento -->
+            <div class="mb-3">
+                <label for="data_nascimento" class="form-label text-dark">Data de Nascimento</label>
+                <input type="date" id="dataNascimento" name="data_nascimento" required class="form-control">
+            </div>
+
+            <!-- Campo de área de interesse (instrumento que quer monitorar) -->
+            <div class="mb-3">
+                <label for="area_interesse" class="form-label text-dark">Área de Interesse</label>
+                <select name="area_interesse" id="areaInteresse" class="form-select" required>
+                    <option value="" disabled selected>Selecione um instrumento</option>
+                    <option value="violão">Violão</option>
+                    <option value="teclado">Teclado</option>
+                    <option value="bateria">Bateria</option>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="canto">Canto</option>
+                    <option value="violino">Violino</option>
+                    <option value="cello">Cello</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-custom-yellow w-100 py-2">
+                Enviar Inscrição
+            </button>
+        </form>
+
+        <p class="text-center text-secondary small mt-3">
+            Seus dados serão usados apenas para contato sobre o Projeto Águia.
+        </p>
+    </div>
+
+    <script src="inscricao-monitor.js"></script>
+
+</body>
+</html>
+

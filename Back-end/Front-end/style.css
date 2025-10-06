@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/* ===== ESTILOS GERAIS ===== */
+body {
+    overflow-x: hidden;
+}
+
+a {
+    font-weight: bold;
+}
+
+#barra-principal {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+}
+
+#barra-principal .nav-link,
+#barra-principal .navbar-brand {
+    color: #ffde59 !important; 
+    font-size: 20px;
+}
+
+.logobarra{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.navbar-brand {
+    margin: 5px;
+}
+
+.form-control {
+    border: 3px solid #ffde59;
+}
+
+.btn-light {
+    background-color: #ffde59;
+    color: black; 
+    border: 1px solid #ffbe59; 
+}
+
+/* Estilos do Rodapé */
+footer .row a strong {
+    color: #ffde59 !important; 
+}
+
+.icone-casa {
+    color: #4682B4; 
+}
+
+.icone-email {
+    color: #f9f23a;
+}
+
+.icone-telefone {
+    color: #25D366; 
+}
+
+/* Estilos únicos da página inicial */
+
+.pagina-inicial .header-container {
+    background-image: url('image/crianças.jpg');
+    background-size: cover;
+    background-position: center 70%;
+}
+
+.pagina-inicial .header-projeto {
+    background-color: rgba(0,0,0,0.5);
+    height: 350px;
+    position: relative;
+    color: white;
+}
+
+.pagina-inicial .header-projeto .overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px; 
+}
+
+.pagina-inicial .header-projeto h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fcfafa;
+    background-color: transparent; 
+}
+
+.pagina-inicial .header-projeto p {
+    font-size: 1.2rem;
+    color:#faf9f9;
+}
+
+/* Seção de vídeo do YouTube */
+.btn-custom-1 {
+    background-color: #f2b705;
+    color: #1a1a1a;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.btn-custom-1:hover {
+    background-color: #d8a504;
+    transform: translateY(-2px);
+    color: #1a1a1a;
+}
+
+.btn-custom-2 {
+    background-color: #333333;
+    color: #f5f5f5;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.btn-custom-2:hover {
+    background-color: #222222;
+    transform: translateY(-2px);
+    color: #f5f5f5;
+}
+
+.secao-video {
+    background-color: rgb(254, 254, 254);
+}
+
+
+/* ===== FONTES PERSONALIZADAS ===== */
+@font-face {
+    font-family: 'GravitasOne'; 
+    src: url('fontes/GravitasOne-Regular.ttf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'GravitasOne2'; 
+    src: url('fontes/GravitasOne-Regular.ttf') format('opentype'); 
+    font-weight: bold; 
+    font-style: normal;
+}
+
+.fonte-btn-NH {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+/* ===== SEÇÕES DO VÍDEO DO YOUTUBE ===== */
+ .btn-custom-1 {
+    background-color: #f2b705;
+    color: #1a1a1a;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.btn-custom-1:hover {
+    background-color: #d8a504;
+    transform: translateY(-2px);
+    color: #1a1a1a;
+}
+
+.btn-custom-2 {
+    background-color: #333333;
+    color: #f5f5f5;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.btn-custom-2:hover {
+    background-color: #222222;
+    transform: translateY(-2px);
+    color: #f5f5f5;
+}
+
+.secao-video {
+    background-color: rgb(254, 254, 254);
+}
+
+.card-border-custom {
+            border-bottom: 4px solid #FFD700;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-border-custom:hover {
+            background-color: #fbff84;
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+
